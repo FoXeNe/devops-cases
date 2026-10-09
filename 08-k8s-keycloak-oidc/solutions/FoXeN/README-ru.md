@@ -1,6 +1,6 @@
 ## 1 - кластер
 
-запустил minikube:
+запуск minikube:
 
 ```bash
 minikube start
@@ -29,7 +29,7 @@ keycloak-keycloakx-http       ClusterIP   10.104.60.149   <none>        9000/TCP
 kubernetes                    ClusterIP   10.96.0.1       <none>        443/TCP                    29h
 ```
 
-для доступа к ui нам нужен серрвис http. пробросим его порты на хост:
+для доступа к ui нам нужен сервис http. пробросим его порты на хост:
 
 ```bash
 kubectl port-forward svc/keycloak-keycloakx-http 8080:80
