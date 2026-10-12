@@ -13,8 +13,7 @@ minikube start
 ```bash
 helm repo add codecentric https://codecentric.github.io/helm-charts
 
-helm install keycloak codecentric/keycloakx \
-  --set 'args[0]=start-dev' \
+helm install keycloak codecentric/keycloakx --set 'args[0]=start-dev'
 ```
 
 ## 3 - проброс портов и настройка keycloak
